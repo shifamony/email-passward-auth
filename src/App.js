@@ -1,4 +1,4 @@
- import { getAuth } from "firebase/auth";
+ //import { getAuth } from "firebase/auth";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import { useState } from "react";
 import './App.css';
@@ -11,7 +11,7 @@ import LoginBootstrap from "./components/LoginBootstrap";
 const router = createBrowserRouter([
   {
     path: '/',
-  element: <Main>0</Main>,
+  element: <Main></Main>,
   children:[
    {
     path: '/',

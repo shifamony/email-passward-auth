@@ -44,7 +44,13 @@ const RegisterReactBootstrap = () => {
         setPasswordError('Please add at least one special charecter');
         return;
     }
+
+
+    //CLEAR PASSWORD ERROR MSG
     setPasswordError('');
+
+
+    //CREATE USER EMAIL AND PASSWORD FUNCTION
      createUserWithEmailAndPassword(auth,email,password)
      .then(result => {
         const user = result.user;
@@ -69,6 +75,7 @@ const RegisterReactBootstrap = () => {
         setPasswordError(error.message);
      })
    }
+   //REGISTER FUNCTION END
 
 //VARIFICATION FUNCTION
 const varifyEmail = () => {
@@ -87,7 +94,7 @@ const updateUserName = (name) => {
   })
   .catch(error => console.log(error))
 }
-
+//=================================
     return (
         <div className='w-50 mx-auto'>
             <h3 className="text-danger fw-bold">Please Register !!!</h3>
